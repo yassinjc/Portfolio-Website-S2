@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ar-Jane Website User Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/webicon.svg" />
+    <link rel="apple-touch-icon" href="images/webicon.svg">
+</head>
+
+<body style="background-color:black">
+    <!-- Navigation -->
+
+    <div class="wrapper">
+        <nav class="desktop-nav">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+
+            <ul class="menu-items">
+                <li class="leerdoelen">
+                    <button class="dropbtn">leerdoelen</button>
+                    <ul class="dropdown">
+                        <li><a href="leerdoelen.html">alle poc's</a></li>
+                        <li><a href="interactive-media.html">interactive media</a></li>
+                        <li><a href="development.html">development</a></li>
+                        <li><a href="design.html">design</a></li>
+                        <li><a href="research.html">research</a></li>
+                        <li><a href="communication.html">communication</a></li>
+                        <li><a href="professional-identity.html">professional identity</a></li>
+                    </ul>
+                </li>
+                <li class="about-me">
+                    <a href="about-me.html">about me</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="modal" class="modal">
+            <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
+            <img class="modal-content" id="img1">
+            <div id="caption"></div>
+        </div>
+
+        <!-- Leerdoelen -->
+
+        <div class="inhoud">
+            <h1>user tests | ar-jane website</h1>
+            <div class="inhoud-text">
+                <h2>Aanpak</h2>
+                <p>Na Ar-Jane's website helemaal gebouwd te hebben, besloot ik om een User Test uit te voeren om te
+                    kijken of onze website qua design goed samengaat met de sfeer van Ar-Jane's muziek. Hiervoor heb ik
+                    een Google Forms enquête opgesteld met een aantal vragen over de sfeer die de website geeft om te
+                    kijken of het ook afstemt op de muziek. Dit is het proces daarvan.</p>
+                <br>
+                <h2>Het proces</h2>
+                <p>Voordat ik vragen opstelde, zette ik eerst een mogelijkheid om naar 1 van Ar-Jane's liedjes te
+                    luisteren. Na dat gedaan te hebben kwamen de vragen. Dit was de eerste meerkeuzevraag:</p>
+                <img class="images" id="img" src="images/vraag1.png" alt="Eerste Vraag">
+                <p>
+                    Daaruit bleek dat het liedje vooral veel gevoeligheid, puurheid en rust uitstraalde.
+                </p>
+                <img class="images" id="img" src="images/result1.png" alt="Resultaten">
+                <p>Hiermee konden we een goede basis leggen voor de sfeer die Ar-Jane uitstraalt, waarmee de website
+                    moet samenhangen. Na dit gevraagd te hebben ging ik over naar het laten bekijken van de website. Ik
+                    vroeg aan de gebruikers om de tijd te nemen om even rond te kijken op de website en een goed beeld
+                    ervan te krijgen. Vervolgens kwam ik met een meerkeuzevraag die ging als volgt:</p>
+                <img class="images" id="img" src="images/vraag2.png" alt="Tweede Vraag">
+                <p>
+                    Met de resultaten hieronder kon ik concluderen dat de website redelijk goed aansloot op de algemene
+                    sfeer van Ar-Jane, vooral op het gebied van rust. Om een nog preciezere antwoord te krijgen volgde
+                    nog een vraag, deze keer een Ja/Nee vraag:</p>
+                <img class="images" id="img" src="images/result3.png" alt="Derde Vraag, Resultaten">
+                <p>
+                    100% van de gebruikers waren het ermee eens dat de website goed past bij de uitstraling van Ar-Jane.
+                </p>
+                <br>
+                <h2>Conclusie</h2>
+                <p>
+                    Als conclusie van deze User Test kan ik zeker zeggen dat we als groep een goede website hebben
+                    gebouwd die goed past bij de uitstraling van Ar-Jane en haar muziek. Hij voelt rustgevend en
+                    natuurlijk aan, zoals de muziek ook aanvoelt en uit deze User Test blijkt ook dat dat voor de
+                    gebruiker ook het geval is. Zeker tevreden met dit resultaat.
+                </p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2022 Yassin Chehlaoui</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

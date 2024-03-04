@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/webicon.svg" />
+    <link rel="apple-touch-icon" href="images/webicon.svg">
+</head>
+
+<body style="background-color:black">
+    <!-- Navigation -->
+
+    <div class="wrapper">
+        <nav class="desktop-nav">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+
+            <ul class="menu-items">
+                <li class="leerdoelen">
+                    <button class="dropbtn">leerdoelen</button>
+                    <ul class="dropdown">
+                        <li><a href="leerdoelen.html">alle poc's</a></li>
+                        <li><a href="interactive-media.html">interactive media</a></li>
+                        <li><a href="development.html">development</a></li>
+                        <li><a href="design.html">design</a></li>
+                        <li><a href="research.html">research</a></li>
+                        <li><a href="communication.html">communication</a></li>
+                        <li><a href="professional-identity.html">professional identity</a></li>
+                    </ul>
+                </li>
+                <li class="about-me">
+                    <a href="about-me.html">about me</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <!-- Leerdoelen -->
+
+        <div class="inhoud">
+            <h1>portfolio website</h1>
+            <div class="inhoud-text">
+                <h2>Aanpak</h2>
+                <p>Als het gaat om development dan ben ik nog niet een erg bevorderde student. In semester 1 heb ik
+                    geleerd hoe ik websites moet bouwen met HTML & CSS en in dit semester wil ik deze vaardigheid
+                    natuurlijk uitbreiden. Mijn portfolio bouwen is een goede start. Na mijn portfolio opzet gedesigned
+                    te hebben in Figma, ben ik begonnen met alles om te zetten naar code. Het design kan je hieronder
+                    bekijken.</p>
+                <img class="images" id="img" src="images/design4.png" alt="Portfolio Design">
+                <p id="design1"><a href="https://www.figma.com/file/IeaIba4h236nRrOUZNDsBk/portfolio-design-4"><u>Design
+                            4</u></a></p>
+                <div id="modal" class="modal">
+                    <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
+                    <img class="modal-content" id="img1">
+                    <div id="caption"></div>
+                </div>
+                <br>
+                <h2>Code</h2>
+                <p>U kunt op deze <a
+                        href="https://git.fhict.nl/I490557/portfolio-yassin-chehlaoui.git"><b><mark>GitLab</mark></b>
+                    </a> link klikken om de code van deze website te bekijken. De front-page is nogal eenvoudig als het
+                    gaat
+                    om code, ik heb een simpele navigatie bar gemaakt met 2 navigatieknoppen en 1 home-knop wat mijn
+                    logo is. Daar heb ik een oranje hoverkleur bij toegevoegd als accentkleur, dit had ik gekregen aan
+                    feedback van Evert. Buiten dat heb ik een foto van mijzelf toegevoegd als banner, en na feedback van
+                    Evert en Sebastiaan gekregen te hebben heb ik ook de "home" tekst weggelaten. Hieronder heb ik een
+                    quote
+                    toegevoegd van een van mijn favoriete artiesten, dit was ook een stukje feedback wat ik heb
+                    meegenomen in mijn website van Evert want hier stond eerst een voorwoord en dat was te "school
+                    presentatie-achtig". Als laatst heb ik een copyright regel toegevoegd aan de onderkant van alle
+                    pagina's.</p>
+                <div class="frontpages">
+                    <div class="figma">
+                        <img class="images" id="img" src="images/design4.png" alt="Before (met home tekst)">
+                    </div>
+                    <div class="frontpage">
+                        <img class="images" id="img" src="images/frontpage.jpeg" alt="After (zonder home tekst)">
+                    </div>
+                </div>
+                <br>
+                <p>Voor de leerdoelen pagina heb ik 6 foto's geplaatst in een grid die een hover overlay hebben waarop
+                    staat welk leerdoel je kan bekijken. Op al deze foto's heb ik links toegevoegd die leiden naar de
+                    projecten binnen het leerdoel. Deze foto's wil ik wel nog vervangen met mijn eigen foto's, dit was
+                    ook een feedbackpuntje om op te letten.</p>
+                <div class="leerdoelenpage">
+                    <img class="images" id="img" src="images/leerdoelenpage.png" alt="Leerdoelen Pagina">
+                </div>
+                <br>
+                <p>Voor de inhoud van elke leerdoel heb ik de projecten op een eenvoudige, maar overzichtelijke manier
+                    onder elkaar gezet met een korte uitleg per project en eenvoudige knopjes om de projecten te
+                    bekijken.</p>
+                <div class="projecten">
+                    <img class="images" id="img" src="images/projecten.png" alt="Projecten Pagina">
+                </div>
+                <br>
+                <h2>Feedback</h2>
+                <p>Bij mijn 2e portfolio review kreeg ik van Lisette te horen dat ik heel veel index files heb, en dat
+                    hoort niet dus dat heb ik aangepast. Ook kreeg ik de tip om bij mijn leerdoelen pagina de hele foto
+                    klikbaar te maken in plaats van alleen de tekst, dus dit heb ik ook aangepast.
+                    <br>
+                    <br>
+                    Bij mijn 3e portfolio review was de enigste feedback qua development van mijn portfolio, dat het
+                    navigeren soms wat doolhof-achtig was, dit heb ik ook aangepast doormiddel van een dropdown menu.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>© 2022 Yassin Chehlaoui</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Hover Animatie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/webicon.svg" />
+    <link rel="apple-touch-icon" href="images/webicon.svg">
+</head>
+
+<body style="background-color:black">
+    <!-- Navigation -->
+
+    <div class="wrapper">
+        <nav class="desktop-nav">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+
+            <ul class="menu-items">
+                <li class="leerdoelen">
+                    <button class="dropbtn">leerdoelen</button>
+                    <ul class="dropdown">
+                        <li><a href="leerdoelen.html">alle poc's</a></li>
+                        <li><a href="interactive-media.html">interactive media</a></li>
+                        <li><a href="development.html">development</a></li>
+                        <li><a href="design.html">design</a></li>
+                        <li><a href="research.html">research</a></li>
+                        <li><a href="communication.html">communication</a></li>
+                        <li><a href="professional-identity.html">professional identity</a></li>
+                    </ul>
+                </li>
+                <li class="about-me">
+                    <a href="about-me.html">about me</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="modal" class="modal">
+            <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
+            <img class="modal-content" id="img1">
+            <div id="caption"></div>
+        </div>
+
+        <!-- Leerdoelen -->
+
+        <div class="inhoud">
+            <h1>hover animatie</h1>
+            <div class="inhoud-text">
+                <h2>Aanpak</h2>
+                <p>Als het gaat om development, heb ik nog heel weinig ervaring met Javascript. En met heel weinig
+                    bedoel ik bijna geen, dus om een gevoel te krijgen voor Javascript zocht ik naar wat beginners
+                    projectjes om te volgen online. Hiermee kon ik een gevoel krijgen voor Javascript en kon ik de
+                    kennis die ik daarvan opnam meenemen in het maken van mijn portfolio. Ik kwam uit op <a
+                        href="https://www.youtube.com/watch?v=mCQ1-iDSnto"><u>deze
+                            tutorial</u></a> waar 3 projecten uitgelegd werden om te maken. Met deze <a
+                        href="https://git.fhict.nl/I490557/javascript-oefeningen/-/tree/main/hover"><b><mark>GitLab</mark></b>
+                    </a> link kan je
+                    het derde project, genaamd "Hover", bekijken die ik heb gemaakt. Het doel was om een simpele
+                    animatie te maken met Javascript. Dit project ging bij mij als
+                    volgt.</p>
+                <br>
+                <h2>Het proces</h2>
+                <p>Wederom begon ik met het maken van een simpele layout in HTML waarin ik natuurlijk CSS en Javascript
+                    aan heb toegevoegd. Buiten dat heb ik een class gemaakt waarmee ik een cirkel weergeef, deze ben ik
+                    gaan maken in CSS.<br>Buiten de standaard CSS die ik toevoegde om de cirkel gecentreerd te maken,
+                    maakte ik de cirkel zelf met een blauwe kleur en een border-radius van 100px. Hiermee kreeg ik een
+                    blauwe cirkel. Ook voegde ik een cubic-bezier transition toe om een smooth animatie te krijgen in
+                    het eindresultaat. Ten slotte voegde ik ook een transform aan om de cirkel te vergroten tijdens de
+                    animatie.<br>Ik begon aan de Javascript met het maken van een variabel voor de cirkel die de
+                    gemaakte cirkel selecteerde. Vervolgens voegde ik een event listener toe, deze zorgde er met
+                    "mouseenter" voor dat als er over de cirkel werd gehovered, er gecheckt werd of er geen hover was.
+                    Als dat het geval was werd een juist een hover toegevoegd. Hiermee kreeg ik de animatie aan de gang,
+                    alleen bleef hij groot dus om dit te voorkomen maakte ik nog een event listener. Deze zorgde er met
+                    "mouseleave" voor dat als de muis niet meer hoverde over de cirkel, dat de hover van de cirkel eraf
+                    ging als die er uberhaupt op zat.<br>Uiteindelijk was dit het resultaat.</p>
+                <img class="images" id="img" src="images/hovergif.gif" alt="Hover Animatie">
+                <br>
+                <br>
+                <h2>Reflectie</h2>
+                <p>Deze opdracht was waarschijnlijk het makkelijkste van de 3 en dat komt vooral door de opdrachten
+                    voorheen. Ik begreep een beetje beter hoe Javascript werkte dus alles was best te doen deze keer. Ik
+                    ben zeker tevreden met de kleine progressie die ik heb gemaakt qua kennis over Javascript.</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2022 Yassin Chehlaoui</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

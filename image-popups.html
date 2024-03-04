@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Modal Images Pop-ups</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/webicon.svg" />
+    <link rel="apple-touch-icon" href="images/webicon.svg">
+</head>
+
+<body style="background-color:black">
+    <!-- Navigation -->
+
+    <div class="wrapper">
+        <nav class="desktop-nav">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+
+            <ul class="menu-items">
+                <li class="leerdoelen">
+                    <button class="dropbtn">leerdoelen</button>
+                    <ul class="dropdown">
+                        <li><a href="leerdoelen.html">alle poc's</a></li>
+                        <li><a href="interactive-media.html">interactive media</a></li>
+                        <li><a href="development.html">development</a></li>
+                        <li><a href="design.html">design</a></li>
+                        <li><a href="research.html">research</a></li>
+                        <li><a href="communication.html">communication</a></li>
+                        <li><a href="professional-identity.html">professional identity</a></li>
+                    </ul>
+                </li>
+                <li class="about-me">
+                    <a href="about-me.html">about me</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <!-- Leerdoelen -->
+
+        <div class="inhoud">
+            <h1>modal image pop-ups</h1>
+            <div class="inhoud-text">
+                <div id="modal" class="modal">
+                    <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
+                    <img class="modal-content" id="img1">
+                    <div id="caption"></div>
+                </div>
+                <h2>Aanpak</h2>
+                <p>
+                    In mijn POC-documentaties gebruik ik altijd wel foto's om het proces duidelijker uit te kunnen
+                    leggen. In de eerste versie van mijn portfolio voegde ik de foto's in en deed er daarna niks meer
+                    aan. Op een gegeven moment vond ik dit een beetje een levenloos en statisch gevoel geven dus ik ben
+                    direct op zoek gegaan naar manieren om dit interactive te maken. Uiteindelijk kwam ik op "Modal Image
+                    Pop-ups" en hieronder lees je hoe ik dat heb gebruikt in mijn website.
+                </p>
+                <br>
+                <h2>W3Schools</h2>
+                <p>Ik ben op deze image techniek gekomen door de website <a
+                        href="https://www.w3schools.com/howto/howto_css_modal_images.asp"><u>W3Schools</u></a>, hierin
+                    werd uitgelegd hoe de code hiervoor werkt en wat alle stappen waren om dit succesvol in je eigen
+                    website te zetten.<br>Voordat ik de stappen uitleg, hier kun je de mijn code zien voor de modal
+                    image pop-ups: <a
+                        href="https://git.fhict.nl/I490557/portfolio-yassin-chehlaoui/-/commit/10cb3df4ae47d8871e93337536f8cce1158a4b6c"><b><mark>GitLab</mark></b>
+                    </a><br>Stap
+                    1 was HTML natuurlijk, ik had de foto's van te voren al ingevoegd en
+                    vervolgens moest ik een Modal div, toen moest ik een close button maken met een span element zodat
+                    je ook uit de pop-up kan klikken, vervolgens moest ik een image class maken waarin ik de fotos
+                    oproep en ten slotte moest ik nog een caption div maken voor eventuele tekst voor onder de
+                    foto('s).<br>Stap 2 was om CSS toe te voegen voor alle elementen die ik heb aangemaakt in
+                    HTML.<br>Stap 3, wat ook de laatste stap was, was om Javascript toe te voegen. Allereerst moest ik
+                    de modal oproepen met een variabele. Daarna moest ik een aantal variabelen maken voor de foto('s)
+                    zelf en de caption tekst, vervolgens moest ik een functie maken waarmee er ook daadwerkelijk een
+                    pop-up komt als er op de foto('s) geklikt wordt. De laatste stap was om de close button op te roepen
+                    en een functie te geven waarmee hij je uit de foto kan halen.
+                </p>
+                <br>
+                <h2>Voorbeeld</h2>
+                <p>Hieronder volgt een voorbeeld foto om te demonstreren wat een Modal Image Pop-up nou eigenlijk doet.
+                    Als je op de foto klikt dan zal hij vergroot worden terwijl de achtergrond donkerder gemaakt wordt.
+                </p>
+                <img class="images" id="img" src="images/city.jpg" alt="Voorbeeld Foto">
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2022 Yassin Chehlaoui</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

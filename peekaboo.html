@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | "Peekaboo"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/webicon.svg" />
+    <link rel="apple-touch-icon" href="images/webicon.svg">
+</head>
+
+<body style="background-color:black">
+    <!-- Navigation -->
+
+    <div class="wrapper">
+        <nav class="desktop-nav">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+
+            <ul class="menu-items">
+                <li class="leerdoelen">
+                    <button class="dropbtn">leerdoelen</button>
+                    <ul class="dropdown">
+                        <li><a href="leerdoelen.html">alle poc's</a></li>
+                        <li><a href="interactive-media.html">interactive media</a></li>
+                        <li><a href="development.html">development</a></li>
+                        <li><a href="design.html">design</a></li>
+                        <li><a href="research.html">research</a></li>
+                        <li><a href="communication.html">communication</a></li>
+                        <li><a href="professional-identity.html">professional identity</a></li>
+                    </ul>
+                </li>
+                <li class="about-me">
+                    <a href="about-me.html">about me</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="modal" class="modal">
+            <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
+            <img class="modal-content" id="img1">
+            <div id="caption"></div>
+        </div>
+
+        <!-- Leerdoelen -->
+
+        <div class="inhoud">
+            <h1>"peekaboo"</h1>
+            <div class="inhoud-text">
+                <h2>Aanpak</h2>
+                <p>Als het gaat om development, heb ik nog heel weinig ervaring met Javascript. En met heel weinig
+                    bedoel ik bijna geen, dus om een gevoel te krijgen voor Javascript zocht ik naar wat beginners
+                    projectjes om te volgen online. Hiermee kon ik een gevoel krijgen voor Javascript en kon ik de
+                    kennis die ik daarvan opnam meenemen in het maken van mijn portfolio. Ik kwam uit op <a
+                        href="https://www.youtube.com/watch?v=mCQ1-iDSnto"><u>deze
+                            tutorial</u></a> waar 3 projecten uitgelegd werden om te maken. Met deze <a
+                        href="https://git.fhict.nl/I490557/javascript-oefeningen/-/tree/main/peekaboo"><b><mark>GitLab</mark></b>
+                    </a> link kan je
+                    het eerste project, genaamd "Peekaboo", bekijken die ik heb gemaakt. Het doel was om met Javascript
+                    een verstopt aapje emoji te laten veranderen naar een zichtbaar aapje emoji, en terug. Dit project
+                    ging bij mij als
+                    volgt.</p>
+                <br>
+                <h2>Het proces</h2>
+                <p>
+                    Ik begon met een hele simpele HTML layout waarin ik de CSS en Javscript toevoegde. Vervolgens maakte
+                    ik 3 classes: een "emoji" class (voor het aapje zelf), een "verstopt" class (voor als het aapje zich
+                    verstopt) en een "active" class. Dit kopieerde en plakte ik nogmaals, alleen veranderde ik de
+                    "verstopt" class met een "zichtbaar" class (voor wanneer het aapje zichtbaar is) en haalde ik de
+                    active class weg omdat deze overbodig was. <br>Na dit gedaan te hebben voegde ik simpele CSS toe om
+                    het aapje duidelijk, zichtbaar en centered te maken. Ik maakte de "emoji" class dus zichtbaar, de
+                    "verstopt" en
+                    "zichtbaar" classes onzichtbaar met "display: none", en de active class zette ik op "display: block"
+                    zodat ik met deze class uiteindelijk ervoor kan zorgen dat het aapje zichtbaar is of niet.<br>Nu
+                    begon het toevoegen van Javascript. Ik maakte 2 variabelen: "verstoptAapje" en "zichtbaarAapje",
+                    eentje die de "verstopt" class aanspreekt, en eentje die de "zichtbaar" class aanspreekt. Vervolgens
+                    voegde ik event listeners toe, eerst voegde ik eentje toe aan het verstoptAapje. Hierbij gebruikte
+                    ik een if statement die aangeroepen werd als er geklikt werd op het verstopte aapje. Als er geklikt
+                    werd op het verstopte aapje dan werd er daarna gecheckt of het zichtbaar aapje de "zichtbaar" class
+                    had, en als dat zo was dan werd hij aangeroepen door middel van het toevoegen van de "active" class
+                    aan het zichtbaar aapje, en zo werd hij zichtbaar. Op dat moment kreeg je beiden aapjes te zien dus
+                    om dit te voorkomen, schreef ik nog een stukje code die de "active" class van het verstopt aapje zou
+                    verwijderen. Hierdoor kwam alleen het zichtbaar aapje in beeld als er geklikt werd op het verstopte
+                    aapje. Om ervoor te zorgen dat het tegenovergestelde ook kon gebeuren maakte ik een nieuwe event
+                    listener, deze keer bij de "zichtbaarAapje" variabel. Wederom gebruikte ik een soortgelijke
+                    if-statement, alleen deze keer liet ik hem checken of het verstopte aapje de "verstopt" class
+                    had. Als dat zo was dan liet ik hem de "active" class toevoegen om nu het verstopt aapje te laten
+                    zien, en wederom schreef ik een stukje code om de "active" class van het zichtbaar aapje te
+                    verwijderen zodat je alleen het verstopt aapje in beeld kreeg.<br>Uiteindelijk kreeg je simpelweg
+                    een aapje in beeld die zich verstopte of zichtbaar maakte telkens als je erop zou klikken. Hieronder
+                    kunt u het zien.
+                </p>
+                <img class="images" id="img" src="images/aapgif.gif" alt="Peekaboo">
+                <br>
+                <br>
+                <h2>Reflectie</h2>
+                <p>
+                    Ik vond het best een leuke opdracht vooral door het feit dat ik een aapje aan het combineren was met
+                    Javascript. Maar buiten dat vond ik deze opdracht best redelijk te volgen, ik begreep de stappen
+                    uiteindelijk wel en ik heb er zeker wat van geleerd.
+                </p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2022 Yassin Chehlaoui</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

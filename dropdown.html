@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Dropdown Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/webicon.svg" />
+    <link rel="apple-touch-icon" href="images/webicon.svg">
+</head>
+
+<body style="background-color:black">
+    <!-- Navigation -->
+
+    <div class="wrapper">
+        <nav class="desktop-nav">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+
+            <ul class="menu-items">
+                <li class="leerdoelen">
+                    <button class="dropbtn">leerdoelen</button>
+                    <ul class="dropdown">
+                        <li><a href="leerdoelen.html">alle poc's</a></li>
+                        <li><a href="interactive-media.html">interactive media</a></li>
+                        <li><a href="development.html">development</a></li>
+                        <li><a href="design.html">design</a></li>
+                        <li><a href="research.html">research</a></li>
+                        <li><a href="communication.html">communication</a></li>
+                        <li><a href="professional-identity.html">professional identity</a></li>
+                    </ul>
+                </li>
+                <li class="about-me">
+                    <a href="about-me.html">about me</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="modal" class="modal">
+            <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
+            <img class="modal-content" id="img1">
+            <div id="caption"></div>
+        </div>
+
+        <!-- Leerdoelen -->
+
+        <div class="inhoud">
+            <h1>dropdown menu</h1>
+            <div class="inhoud-text">
+                <h2>Aanpak</h2>
+                <p>
+                    Ik kreeg van Jo-An en Lisette de feedback om de navigatie binnenin mijn portfolio te verbeteren. Het
+                    was makkelijk om verdwaald te raken in mijn portfolio en dat is uiteraard niet
+                    gebruikersvriendelijk, dus ik kwam met het idee om een dropdown menu te maken waarin alle leerdoelen
+                    heel makkelijk bereikbaar zijn ongeacht waar je je bevindt in mijn portfolio. Via deze <a
+                        href="https://git.fhict.nl/I490557/portfolio-yassin-chehlaoui/-/commit/7522febea809f3c163f0f1584ba0ceb1725baa54"><b><mark>GitLab</mark></b>
+                    </a> link kan je de code bekijken van het menu. Dit is het proces van
+                    het maken van dat menu.
+                </p>
+                <br>
+                <h2>Het proces</h2>
+                <p>
+                    Om te beginnen met het maken van de dropdown menu heb ik een button class gemaakt waarmee je het
+                    menu in beeld krijgt als je erover hovered. Vervolgens heb ik daar een unordered list class gezet
+                    met de een knop om naar alle leerdoelen te gaan, zowel als alle leerdoelen individueel. Hiermee
+                    wordt het navigeren een stuk makkelijker.<br>Vervolgens begon ik aan de CSS. Ik stijlde het menu op
+                    een manier wat aansloot op de rest van mijn website. Ik had alle knoppen onder elkaar gezet, de
+                    tekst een oranje kleur en gloei gegeven, en de kleur van de knop zelf ook donker oranje gemaakt om
+                    uiteindelijk een mooi resultaat te krijgen. Vervolgens riep ik de dropdown menu zelf aan door
+                    "display: block" toe te voegen aan de unordered list class die ik had gemaakt als er gehovered werd
+                    over het leerdoelen knopje. Uiteindelijk was dit het resultaat en ik ben er zeker tevreden mee:
+                </p>
+                <img class="images" id="img" src="images/dropdownmenu.gif" alt="Dropdown Menu">
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2022 Yassin Chehlaoui</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

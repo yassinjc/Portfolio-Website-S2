@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Portfolio Navigatie User Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/webicon.svg" />
+    <link rel="apple-touch-icon" href="images/webicon.svg">
+</head>
+
+<body style="background-color:black">
+    <!-- Navigation -->
+
+    <div class="wrapper">
+        <nav class="desktop-nav">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+
+            <ul class="menu-items">
+                <li class="leerdoelen">
+                    <button class="dropbtn">leerdoelen</button>
+                    <ul class="dropdown">
+                        <li><a href="leerdoelen.html">alle poc's</a></li>
+                        <li><a href="interactive-media.html">interactive media</a></li>
+                        <li><a href="development.html">development</a></li>
+                        <li><a href="design.html">design</a></li>
+                        <li><a href="research.html">research</a></li>
+                        <li><a href="communication.html">communication</a></li>
+                        <li><a href="professional-identity.html">professional identity</a></li>
+                    </ul>
+                </li>
+                <li class="about-me">
+                    <a href="about-me.html">about me</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="modal" class="modal">
+            <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
+            <img class="modal-content" id="img1">
+            <div id="caption"></div>
+        </div>
+
+        <!-- Leerdoelen -->
+
+        <div class="inhoud">
+            <h1>user tests | portfolio navigatie</h1>
+            <div class="inhoud-text">
+                <h2>Aanpak</h2>
+                <p>
+                    In mijn tweede en derde portfolio reviews kreeg ik de feedback dat mijn portfolio nogal een doolhof
+                    kon zijn en dat er niet echt een makkelijke manier was van navigatie, je raakte snel verdwaald in
+                    leerdoelen en projecten en ik dacht dat een dropdown menu een goede manier was om dit probleem te
+                    verhelpen. Na dit gedaan te hebben heb ik een User Test opgesteld in een Google Forms enquête, om
+                    erachter te komen of dit ook daadwerkelijk het navigeren door mijn portfolio verbetert. Hieronder
+                    zie je het proces.
+                </p>
+                <br>
+                <h2>Het proces</h2>
+                <p>
+                    Om de enquête te beginnen begon ik met een link naar mijn portfolio, hiermee vroeg ik de gebruiker
+                    om rustig de tijd te nemen om te navigeren door mijn portfolio. Vervolgens stelde ik een redelijk
+                    algemene Ja/Nee vraag:
+                </p>
+                <img class="images" id="img" src="images/nav1.png" alt="Eerste Vraag">
+                <p>
+                    Uit deze vraag bleek dat de algemene layout van mijn portfolio duidelijk was, na aanleiding van de
+                    mening van 11 gebruikers. Vervolgens stelde ik de volgende vraag:
+                </p>
+                <img class="images" id="img" src="images/nav2.png" alt="Tweede Vraag">
+                <p>
+                    Uit deze vraag bleek 10 van de 11 mensen vonden dat de dropdown menu een handige vorm van navigatie
+                    was voor mijn portfolio. De ene persoon die het tegengestelde vond, vond dat omdat mijn portfolio
+                    niet optimaal is gebouwd voor het gebruik op telefoon. Maar de meerderheid was het er mee eens dat
+                    de dropdown menu hielp met navigatie.<br>Nog een vraag die ik stelde, die niet heel erg gefocust was
+                    op de navigatie van de website, was een vraag over de layout van mijn projecten:
+                </p>
+                <img class="images" id="img" src="images/nav3.png" alt="Derde Vraag">
+                <p>
+                    Hieruit bleek dat de meerderheid vond dat de layout duidelijk was, maar toch waren er wat mensen die
+                    het tegenovergestelde vonden en ze hadden best goede argumenten. Het ging er vooral om dat de
+                    alinea's dicht op elkaar liggen en dat wat meer spacing fijner zou zijn om te lezen.
+                </p>
+                <img class="images" id="img" src="images/nav4.png" alt="Aanleidingen">
+                <br>
+                <br>
+                <h2>Conclusie</h2>
+                <p>
+                    Uit deze User Test kon ik concluderen dat de dropdown menu inderdaad een goede manier was om de
+                    navigatie te verbeteren. Over het algemeen ben ik tevreden met het resultaat van deze User Test, ik
+                    heb er ook zeker veel aan gehad.
+                </p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2022 Yassin Chehlaoui</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,676 @@
+/* Colors */
+
+:root {
+    --zwart: #000000;
+    --wit: #FFFFFF;
+
+    --hover-text: #ff8c32;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Red Rose";
+    color: var(--wit);
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 1.3;
+    font-weight: lighter;
+    word-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--wit);
+}
+
+mark {
+    background-color: #ff8c32;
+    color: black;
+}
+
+/* Navigation */
+
+.leerdoelen li {
+    display: list-item;
+    list-style: none;
+    text-align: center;
+    line-height: 150%;
+    background-color: #000000;
+    margin-left: -48%;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 40%;
+    margin-left: -57%;
+    width: 230%;
+    height: 1215%;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.leerdoelen:hover .dropdown {
+    display: block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'Red Rose';
+    font-size: 0.6rem;
+    z-index: 5;
+}
+
+.leerdoelen:hover .dropbtn {
+    color: #ff8c32;
+    transition: 0.3s;
+}
+
+.leerdoelen a:hover {
+    background-color: rgb(38, 16, 0);
+}
+
+.leerdoelen a {
+    padding: 5% 10%;
+    display: block;
+}
+
+.desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--zwart);
+    position: fixed;
+    width: 100%;
+    height: 20%;
+    z-index: 200;
+}
+
+.desktop-nav .menu-items {
+    display: flex;
+    list-style: none;
+}
+
+.desktop-nav .logo {
+    display: flex;
+    position: absolute;
+    width: 4.7%;
+    left: 47.5%;
+    bottom: 15%;
+}
+
+.desktop-nav .logo img {
+    width: 100%;
+}
+
+.desktop-nav .menu-items li a {
+    text-decoration: none;
+    color: var(--wit);
+    font-size: 0.8vw;
+    transition: 0.3s;
+}
+
+.desktop-nav .menu-items li a:hover {
+    color: var(--hover-text);
+    text-shadow: 0px 0 10px;
+}
+
+.desktop-nav .menu-items .leerdoelen {
+    display: flex;
+    position: absolute;
+    right: 71%;
+    top: 48%;
+}
+
+.desktop-nav .menu-items .about-me {
+    display: flex;
+    position: absolute;
+    right: 25%;
+    top: 48%;
+}
+
+/* Header */
+
+.hero-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container .banner img{
+    display: flex;
+    width: 100%;
+    padding-top: 8rem;
+}
+
+.voorwoord {
+    flex-direction: column;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    padding-top: 2.5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.voorwoord p {
+    font-family: "Red Rose";
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.voorwoord #x {
+    font-family: "Red Rose";
+    font-weight: lighter;
+    font-size: 0.7rem;
+}
+
+.voorwoord h1 {
+    font-family: "Red Rose";
+    font-weight: normal;
+    font-size: 1.3rem;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+.copyright {
+    display: flex;
+    font-size: 0.7vw;
+    justify-content: center;
+    padding-bottom: 0.3%;
+    padding-top: 11.5%;
+}
+
+.backbutton {
+    position: absolute;
+    left: 83.5%;
+    top: 23%;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Leerdoelen */
+
+.leerdoelen-content h1 {
+    font-family: "Red Rose";
+    font-weight: normal;
+    font-size: 2rem;
+    padding-top: 8rem;
+    padding-left: 15%;
+}
+
+.leerdoelen-container {
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,20%);
+    grid-gap: 7.5% 5%;
+}
+
+.leerdoelen-container img {
+    width: 100%;
+}
+
+.interactive-media {
+    position: relative;
+    width: 100%;
+}
+
+.development {
+    position: relative;
+    width: 100%;
+}
+
+.design {
+    position: relative;
+    width: 100%;
+}
+
+.research {
+    position: relative;
+    width: 100%;
+}
+
+.communication {
+    position: relative;
+    width: 100%;
+}
+
+.professional-identity {
+    position: relative;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: rgba(0,0,0,0.6);
+    font-weight: lighter;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* Interactive Media */
+
+.interactive-media-content h1 {
+    font-family: "Red Rose";
+    font-weight: normal;
+    font-size: 2rem;
+    padding-top: 8rem;
+    padding-left: 15%;
+    padding-bottom: 1%;
+}
+
+.interactive-media-content img{
+    width: 35%;
+    padding-left: 15%;
+    padding-top: 1%;
+}
+
+.interactive-media-content h2 {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.interactive-media-content p {
+    font-size: 0.8rem;
+}
+
+.knopjes {
+    display: flex;
+    flex-direction: row;
+}
+
+#scarlxrdknop {
+    margin-left: 9%;
+}
+
+#dxxmlifeknop {
+    margin-left: 19%;
+}
+
+#design1 {
+    margin-left: 12.5%;
+}
+
+#design2 {
+    margin-left: 27.5%;
+}
+
+#design3 {
+    margin-left: 27.5%;
+}
+
+#anikaknop {
+    margin-left: 10.5%;
+}
+
+#img {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#img:hover {
+    opacity: 0.7;
+}
+
+#img1 {
+    width: 100%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 12%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+    overflow: hidden;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    right: 15%;
+    color: #f1f1f1;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Development */
+
+.development-content h1 {
+    font-family: "Red Rose";
+    font-weight: normal;
+    font-size: 2rem;
+    padding-top: 8rem;
+    padding-left: 15%;
+}
+
+.development-content img{
+    width: 35%;
+    padding-left: 15%;
+    padding-top: 1%;
+}
+
+.development-content h2 {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.development-content p {
+    font-size: 0.8rem;
+}
+
+.development-content .portfolio .postertext {
+    margin-top: -12.2%;
+}
+
+/* Design */
+
+.design-content h1 {
+    font-family: "Red Rose";
+    font-weight: normal;
+    font-size: 2rem;
+    padding-top: 8rem;
+    padding-left: 15%;
+}
+
+.design-content img{
+    width: 35%;
+    padding-left: 15%;
+    padding-top: 1%;
+}
+
+.design-content h2 {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.design-content p {
+    font-size: 0.8rem;
+}
+
+.postertext {
+    padding-left: 39%;
+    margin-top: -11.7%;
+}
+
+.postertext #bekijk {
+    font-weight: bold;
+}
+
+#album {
+    width: 43%;
+}
+
+#vid1 {
+    padding-left: 10%;
+}
+
+#vid2 {
+    padding-left: 25%;
+}
+
+#vid3 {
+    padding-left: 28%;
+}
+
+/* Research */
+
+.research-content h1 {
+    font-family: "Red Rose";
+    font-weight: normal;
+    font-size: 2rem;
+    padding-top: 8rem;
+    padding-left: 15%;
+}
+
+.research-content img{
+    width: 35%;
+    padding-left: 15%;
+    padding-top: 1%;
+}
+
+.research-content h2 {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.research-content p {
+    font-size: 0.8rem;
+}
+
+.mediaverkenning .postertext {
+    margin-top: -12.3%;
+}
+
+/* Communication */
+
+.communication-content h1 {
+    font-family: "Red Rose";
+    font-weight: normal;
+    font-size: 2rem;
+    padding-top: 8rem;
+    padding-left: 15%;
+}
+
+.communication-content img{
+    width: 35%;
+    padding-left: 15%;
+    padding-top: 1%;
+}
+
+.communication-content h2 { 
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.communication-content p {
+    font-size: 0.8rem;
+}
+
+/* Professional Identity */
+
+.professional-identity-content h1 {
+    font-family: "Red Rose";
+    font-weight: normal;
+    font-size: 2rem;
+    padding-top: 8rem;
+    padding-left: 15%;
+}
+
+.professional-identity-content img{
+    width: 35%;
+    padding-left: 15%;
+    padding-top: 1%;
+}
+
+.professional-identity-content h2 { 
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.professional-identity-content p {
+    font-size: 0.8rem;
+}
+
+.scrum .postertext {
+    margin-top: -12.5%;
+}
+
+.premiere .postertext {
+    margin-top: -12.2%
+}
+
+.aftereffects .postertext {
+    margin-top: -12.2%
+}
+
+/* Leerdoelen Inhoud */
+
+.inhoud-text {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.inhoud h1 {
+    font-family: "Red Rose";
+    font-weight: normal;
+    font-size: 2rem;
+    padding-top: 8rem;
+    padding-left: 15%;
+    padding-bottom: 1%;
+}
+
+.inhoud h2 {
+    font-family: "Red Rose";
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
+.inhoud img {
+    width: 33%;
+}
+
+.inhoud p {
+    font-size: 0.9rem;
+}
+
+.figma img {
+    width: 50%
+}
+
+.frontpage img {
+    width: 50%
+}
+
+.leerdoelenpage img {
+    width: 50%;
+}
+
+.projecten img {
+    width: 50%;
+}
+
+.teams1 img {
+    width: 50%;
+}
+
+.teams2 img {
+    width: 50%;
+}
+
+.whatsapp img {
+    width: 50%;
+}
+
+/* About Me */
+
+.inhoud .about-me-inhoud img {
+    width: 20%;
+    margin-left: 15%;
+}
+
+.inhoud .about-me-inhoud {
+    flex-direction: wrap;
+}
+
+.inhoud .about-me-inhoud p {
+    width: 40%;
+    margin-left: 40%;
+    margin-top: -21%;
+}
+
+#insta {
+    width: 2%;
+    margin-top: 2.5%;
+    margin-left: 39.7%;
+}
+
+#twitter {
+    width: 2%;
+    margin-top: 2.6%;
+    margin-left: 1%;
+}
+
+#spoti {
+    width: 2%;
+    margin-top: 2.6%;
+    margin-left: 1%;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Dataoverzicht</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/webicon.svg" />
+    <link rel="apple-touch-icon" href="images/webicon.svg">
+</head>
+
+<body style="background-color:black">
+    <!-- Navigation -->
+
+    <div class="wrapper">
+        <nav class="desktop-nav">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+
+            <ul class="menu-items">
+                <li class="leerdoelen">
+                    <button class="dropbtn">leerdoelen</button>
+                    <ul class="dropdown">
+                        <li><a href="leerdoelen.html">alle poc's</a></li>
+                        <li><a href="interactive-media.html">interactive media</a></li>
+                        <li><a href="development.html">development</a></li>
+                        <li><a href="design.html">design</a></li>
+                        <li><a href="research.html">research</a></li>
+                        <li><a href="communication.html">communication</a></li>
+                        <li><a href="professional-identity.html">professional identity</a></li>
+                    </ul>
+                </li>
+                <li class="about-me">
+                    <a href="about-me.html">about me</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="modal" class="modal">
+            <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
+            <img class="modal-content" id="img1">
+            <div id="caption"></div>
+        </div>
+
+        <!-- Leerdoelen -->
+
+        <div class="inhoud">
+            <h1>dataoverzicht</h1>
+            <div class="inhoud-text">
+                <h2>Aanpak</h2>
+                <p>Als het gaat om development, heb ik nog heel weinig ervaring met Javascript. En met heel weinig
+                    bedoel ik bijna geen, dus om een gevoel te krijgen voor Javascript zocht ik naar wat beginners
+                    projectjes om te volgen online. Hiermee kon ik een gevoel krijgen voor Javascript en kon ik de
+                    kennis die ik daarvan opnam meenemen in het maken van mijn portfolio. Ik kwam uit op <a
+                        href="https://www.youtube.com/watch?v=mCQ1-iDSnto"><u>deze
+                            tutorial</u></a> waar 3 projecten uitgelegd werden om te maken. Met deze <a
+                        href="https://git.fhict.nl/I490557/javascript-oefeningen/-/tree/main/dataoverzicht"><b><mark>GitLab</mark></b>
+                    </a> link kan je
+                    het tweede project, genaamd "Dataoverzicht", bekijken die ik heb gemaakt. Het doel was om data in
+                    overzicht te brengen door middel van Javascript. Dit project ging bij mij als
+                    volgt.</p>
+                <br>
+                <h2>Het proces</h2>
+                <p>
+                    Ik begon met een simpele HTML layout waarin ik CSS en Javascript aan toevoegde. Het enige wat ik
+                    daarna heb toegevoegd was een kopje en een class voor alle data genaamd "info".<br>Vervolgens heb ik
+                    minimale CSS toegevoegd om alles een beetje netjes weer te geven.<br>Vervolgens begon ik aan het
+                    toevoegen van Javascript. Ik gebruikte "let" om meerdere variabelen op te slaan op 1 plek met een
+                    array, ik zette
+                    mijzelf en mijn vrienden hierin met iedereen's leeftijd. Dat was het kleine stukje aan data wat ik
+                    wilde weergeven. Vervolgens maakte ik een variabel "info" die de "info" class selecteerde.
+                    Vervolgens gebruikte ik opnieuw "let" om een functie aan te roepen. Binnenin deze functie zorgde ik
+                    ervoor dat alle gegevens binnenin de class, die ik gemaakt had in HTML, gezet werden door middel
+                    van een return statement. In de return statement zette ik de naam en leeftijd, als items, in de
+                    class en om het wat completer te maken voegde ik ook stukjes tekst toe om hele zinnen te maken van
+                    de datastukjes. Onderin zie je ook een stukje code "info.innerHTML = details.join('\n');", hiermee
+                    kon ik de data daadwerkelijk weergeven. Hieronder zie je het eindresultaat.
+                </p>
+                <img class="images" id="img" src="images/datapic.png" alt="Dataoverzicht">
+                <br>
+                <br>
+                <h2>Reflectie</h2>
+                <p>
+                    Deze opdracht was ietsjes moeilijker te volgen in het begin, maar uiteindelijk best goed te
+                    begrijpen. Hiermee heb ik ook een beetje geleerd hoe ik data kan weergeven met javascript. Wel
+                    kleinschalig maar begrijpelijk en handig om te kunnen.
+                </p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2022 Yassin Chehlaoui</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
